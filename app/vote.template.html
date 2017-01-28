@@ -1,0 +1,11 @@
+<div class="vote-box">
+    <i class="glyphicon glyphicon-chevron-up"
+       [class.chosen-vote]="myVote == 1"
+       on-click="onClickYes()"></i>
+
+    <span>{{voteCount + myVote}}</span>
+
+    <i class="glyphicon glyphicon-chevron-down"
+       [class.chosen-vote]="myVote == -1"
+       on-click="onCLickNo()"></i>
+</div>

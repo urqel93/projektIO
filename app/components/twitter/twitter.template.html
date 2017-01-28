@@ -1,0 +1,15 @@
+<div class="main media">
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object user-image" src="{{twitter.author[x].image}}" alt="...">
+        </a>
+    </div>
+    <div class="media-body">
+        <div class="header-container">
+            <h4 class="media-heading">{{twitter.author[x}.subject}}</h4> <h4 class="nick-name">@{{twitter.author[x}.nick}}</h4>
+        </div>
+        {{twitter.author[x}.description}}
+        <like [is-liked]="post.isLiked" [numberOfLikes]="post.numberOfLikes"
+              (change)="onLikedChange($event)"></like>
+    </div>
+</div>
